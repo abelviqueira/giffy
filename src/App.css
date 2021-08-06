@@ -5,15 +5,15 @@
 .App-header {
   display: flex;
   flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
-  align-items: center;
+  padding: 10px;
 }
 
 .App-header a {
   display: inline-flex;
   flex-wrap: wrap;
-  text-align: center;
+  width: 100%;
+  text-align: left;
 }
 
 .App-logo {
@@ -29,8 +29,10 @@
 }
 
 .App-title {
-  color: var(--theme-body-txt);
-  margin-top: 0.6rem;
+  color: purple;
+  margin-top: 2rem;
+  text-align: left;
+  
 }
 
 .App-content {
@@ -98,4 +100,22 @@
 
 .btn:hover {
   background-color: var(--brand-color_6);
+}
+
+input[type="text"] {
+  padding: 10px 20px;
+  border: 2px solid purple;
+  border-radius: 25px;
+  background-color: transparent; 
+  color: purple;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  background: turquoise;
+}
+
+::-webkit-input-placeholder {
+  color: purple;
+  opacity: .8;
 }
